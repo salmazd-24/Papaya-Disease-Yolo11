@@ -107,9 +107,9 @@ else:
 
             col1, col2 = st.columns(2)
             with col1:
-                st.image("images/penyakit pepaya.png", caption="Gambar Awal", use_container_width=True)
+                st.image("images/penyakit pepaya.png", caption="Gambar Awal", use_column_width=True)
             with col2:
-                st.image("images/detected disease.png", caption="Gambar Deteksi", use_container_width=True)
+                st.image("images/detected disease.png", caption="Gambar Deteksi", use_column_width=True)
 
         elif selected_menu == "Detection":
             confidence = 0.4
@@ -139,9 +139,9 @@ else:
 
                         col1, col2 = st.columns(2)
                         with col1:
-                            st.image(img, caption="Gambar yang diupload", use_container_width=True)
+                            st.image(img, caption="Gambar yang diupload", use_column_width=True)
                         with col2:
-                            st.image(plotted, caption="Hasil Deteksi", use_container_width=True)
+                            st.image(plotted, caption="Hasil Deteksi", use_column_width=True)
 
                         try:
                             with open("penyakit_pepaya_info.json", "r", encoding="utf-8") as f:
@@ -185,9 +185,9 @@ else:
 
                     col1, col2 = st.columns(2)
                     with col1:
-                        st.image(camera_img, caption="Gambar dari Kamera", use_container_width=True)
+                        st.image(camera_img, caption="Gambar dari Kamera", use_column_width=True)
                     with col2:
-                        st.image(plotted_cam, caption="Hasil Deteksi dari Kamera", use_container_width=True)
+                        st.image(plotted_cam, caption="Hasil Deteksi dari Kamera", use_column_width=True)
 
                     try:
                         with open("penyakit_pepaya_info.json", "r", encoding="utf-8") as f:
@@ -226,8 +226,8 @@ else:
             if st.session_state.get('history'):
                 for idx, rec in enumerate(st.session_state.history):
                     st.subheader(f"Record {idx + 1}")
-                    st.image(rec['image'], caption=f"Image {idx + 1}", use_container_width=True)
-                    st.image(rec['result'], caption=f"Result {idx + 1}", use_container_width=True)
+                    st.image(rec['image'], caption=f"Image {idx + 1}", use_column_width=True)
+                    st.image(rec['result'], caption=f"Result {idx + 1}", use_column_width=True)
                     if 'boxes' in rec:
                         with st.expander(f"Boxes Detail {idx + 1}"):
                             for box in rec['boxes']:
