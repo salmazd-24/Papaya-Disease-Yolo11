@@ -1,6 +1,6 @@
-# <span style="color:deepskyblue"> Real-time Object Detection and Tracking with YOLOv8 & Streamlit </span>
+# <span style="color:deepskyblue"> Real-time Object Detection and Tracking with YOLO11 & Streamlit </span>
 
-This repository is an extensive open-source project showcasing the seamless integration of **object detection and tracking** using **YOLOv8** (object detection algorithm), along with **Streamlit** (a popular Python web application framework for creating interactive web apps). The project offers a user-friendly and customizable interface designed to detect and track objects in real-time video streams from sources such as RTSP, UDP, and YouTube URLs, as well as static videos and images.
+This repository is an extensive open-source project showcasing the seamless integration of **object detection and tracking** using **YOLO11** (object detection algorithm), along with **Streamlit** (a popular Python web application framework for creating interactive web apps). The project offers a user-friendly and customizable interface designed to detect and track objects in real-time.
 
 
 ## <span style="color:deepskyblue">Explore Implementation Details on Medium (3 parts blog series) </span>
@@ -35,7 +35,7 @@ This app is up and running on Streamlit cloud server!!! You can check the demo o
 ## Requirements
 
 Python 3.6+
-YOLOv8
+YOLO11
 Streamlit
 
 ```bash
